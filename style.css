@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1} }
+
+    @keyframes slide-animation {
+        0% {
+          opacity: 0;
+        }
+        20% {
+          opacity: 1;
+        }
+        33.333% {
+          opacity: 1;
+        }
+        53.333% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        } }
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor01:(#1F1F1F);
+    --cor02:(#B2B2B2);
+    --cor03:(#FFFFFF);
+
+}
+
+header{
+    text-align: center;
+    border: 100%;
+    background-image: linear-gradient(to left,#B2B2B2, #e7dada );
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+    color: #1f1f1f5d;
+}
+header >h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    color:#1f1f1f5d;    
+}
+nav{
+    background-image: linear-gradient(to left,#B2B2B2, #e7dada );
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+nav >a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+nav>a:hover{
+    background-color: rgb(139, 132, 132);
+    transition-duration: .75s;
+
+}
+.slideshow {
+    position: relative;
+    width: 500px;
+    height: 500px; /* altura das imagens */
+    overflow: hidden;
+    
+    
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .slideshow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slide:first-child {
+    animation-delay: 20s;
+    animation: slide-animation 15s infinite;
+  }
+  .slide:nth-child(2) {
+    animation: slide-animation 15s infinite;
+    animation-delay: 20s;
+  }
+  
+  .slide:nth-child(3) {
+    animation: slide-animation 15s infinite;
+    animation-delay: 20s;
+  }
+  .slide:nth-child(4) {
+    animation: slide-animation 15s infinite;
+    animation-delay: 10s;
+  }
+  .slide:nth-child(5) {
+    animation: slide-animation 15s infinite;
+    animation-delay: 10s;
+  }
+  .slide:nth-child(6) {
+    animation: slide-animation 15s infinite;
+    animation-delay: 10s;
+  }
+  
+  main{
+
+    background-color: #1f1f1fa1;
+  }
+  
+
+  
